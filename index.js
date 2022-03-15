@@ -2,7 +2,7 @@ const sizes = document.querySelectorAll(".size");
 const colors = document.querySelectorAll(".color");
 const shoes = document.querySelectorAll(".shoe");
 const gradients = document.querySelectorAll(".gradient");
-const shoeBg = document.querySelectorAll(".shoeBackground");
+const shoeBg = document.querySelector(".shoeBackground");
 
 let prevColor = "blue";
 let animationEnd = true;
@@ -30,7 +30,7 @@ function changeColor() {
   shoes.forEach((s) => s.classList.remove("show"));
   shoe.classList.add("show");
 
-  gradients.forEach((g) => g.classList.remove("first", second));
+  gradients.forEach((g) => g.classList.remove("first", "second"));
   gradient.classList.add("first");
   prevGradient.classList.add("second");
 
